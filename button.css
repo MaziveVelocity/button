@@ -1,13 +1,16 @@
-body{
+body
+{
     background-color: red;
 }
 
-h1{
+h1
+{
     color: red;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.button{
+.button
+{
     display: block;
     margin-top: 330px;
     margin-left: auto;
