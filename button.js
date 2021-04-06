@@ -1,9 +1,17 @@
-function buttonPush()
-{
-    document.getElementById('button').setAttribute('src','assets/button-push.png')
-}
+//variable decleration
+const button = document.getElementById('button');
+console.log('variables declared')
 
-function buttonUnpush()
-{
-    document.getElementById('button').setAttribute('src','assets/button.png')
-}
+//function decleration
+ function buttonPush(){
+     button.src = 'assets/button-push.png'
+ }
+
+ function buttonUnpush(){
+    button.src = 'assets/button.png'
+ }
+
+//webpage actions
+button.addEventListener('mouseleave',buttonUnpush)
+button.addEventListener('mousedown', buttonPush);
+button.addEventListener('mouseup', buttonUnpush);
