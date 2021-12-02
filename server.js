@@ -17,11 +17,6 @@ app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 app.use(router);
-// app.get('/', (req, res) => {
-//     res.render('button');
-//     console.log('on the main page')
-//     // res.json({message: 'On the main page'})
-// })
 
 db.once('open', () => {
     app.listen(PORT, () => {
