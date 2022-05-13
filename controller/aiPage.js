@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
-const userApi = require('./userApi');
-
-router.use('/user', userApi);
+router.get('/', (req, res) => {
+    res.render('ai');
+});
 
 module.exports = router;
